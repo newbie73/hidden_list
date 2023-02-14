@@ -6,13 +6,15 @@ html, body {
 
 .nav {
     width: 300px;
-    position: relative;
     margin-left: 30px;
 }
-.main-menu{
+.nav ul{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.main-menu{
+    position: relative;
 }
 .main-menu a{
     display: block;
@@ -25,7 +27,33 @@ html, body {
     border-bottom: solid 1px #ccc;
 }
 .main-menu a:hover {
-    cursor: pointer;
-    background-color: rgb(194, 58, 58);
-    
+    background-color: rgb(194, 58, 58);  
+}
+.category:hover .hidden-list{
+    visibility: visible;
+}
+.hidden-list{
+    visibility: collapse;
+    position: absolute;
+    width: 500px;
+    list-style: none;
+}
+.hidden-list li {
+    margin-left: 300px;
+}
+.hidden-list li:nth-child(1){
+    margin-top: -40px;
+}
+.hidden-list a{
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    background-color: rgb(129, 28, 28);
+    color: white;
+    font-weight: bold;
+    border-bottom: solid 1px #ccc;
+}
+.hidden-list a:hover {
+    background-color: rgb(194, 58, 58);  
 }
