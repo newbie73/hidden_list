@@ -29,7 +29,7 @@ html, body {
 .main-menu a:hover {
     background-color: rgb(194, 58, 58);  
 }
-.category:hover .hidden-list{
+.category:hover .one{
     visibility: visible;
 }
 .hidden-list{
@@ -38,15 +38,27 @@ html, body {
     width: 500px;
     list-style: none;
 }
-.hidden-list li {
+.one li {
     margin-left: 300px;
 }
-.hidden-list li:nth-child(1){
+.one li:nth-child(1){
     margin-top: -40px;
 }
+.two li {
+    margin-left: 220px;
+}
+.two li > a{
+    background-color: rgb(45, 129, 28);
+}
+.two {
+    visibility: collapse;
+}
+.category-2:hover .two{
+    visibility: visible;
+}
 .hidden-list a{
+    width: 200px;
     display: block;
-    padding: 10px;
     text-transform: capitalize;
     text-decoration: none;
     background-color: rgb(129, 28, 28);
